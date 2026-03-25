@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La déportation</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tabs */
+        .tabs {
+            margin-bottom: 10px;
+    padding: 3px; /* autour des boutons */
+}
+
+        .tabs button {
+            padding: 20px 35px;
+            border: none;
+            cursor: pointer;
+            margin-right: 3px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+            font-size: 25px;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        /* Styles spécifiques pour chaque onglet */
+        #accueil.style {
+            font-size: 16px;
+            color: #3A2F2F;
+            background-color: #EAE7E1;
+            padding: 15px;
+            border: 3px solid #3A2F2F;
+            text-align: center;
+        }
+
+        #La\ résistance.style {
+            font-size: 16px;
+            color: #3A2F2F;
+            background-color: #EAE7E1;
+            padding: 15px;
+            border: 3px solid #3A2F2F;
+            text-align: center;
+        }
+
+        #Le\ tribunal\ de\ Nuremberg.style {
+            font-size: 16px;
+            color: #3A2F2F;
+            background-color: #EAE7E1;
+            padding: 15px;
+            border: 3px solid #3A2F2F;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <button onclick="openTab('accueil')" class="active">La déportation</button>
+        <button onclick="openTab('La résistance')">La résistance</button>
+        <button onclick="openTab('Le tribunal de Nuremberg')">Le tribunal de Nuremberg</button>
+    </div>
+
+    <!-- Contenu des onglets avec style automatique -->
+    <div id="accueil" class="content active style">
+        <h2>La déportation</h2>
+        <p>Pour commencer, il faut introduire un contexte historique, c'est à dire expliquer ce qu'était la déportation, pourquoi elle a eu lieu, et comment elle s'est déroulée :</p>
+        <a href="page2.html">Le contexte historique →</a><br>
+        <br>
+        <p class="gras">La déportation, la vie dans les camps</p>
+        <p> Dans les camps de concentration et d’extermination, la vie quotidienne des déportés était marquée par une extrême brutalité et une déshumanisation totale. Dès leur arrivée, les prisonniers étaient dépouillés de tout ce qui faisait leur identité : leurs vêtements étaient remplacés par des tenues rayées, leurs cheveux rasés, et ils étaient identifiés par un numéro plutôt que par leur nom. La vie dans les camps était organisée de manière très stricte et répétitive, rythmée par des appels interminables, appelés “appels”, durant lesquels les déportés devaient rester immobiles pendant des heures, parfois sous la pluie, le froid ou la neige.
+
+Les journées étaient dominées par le travail forcé, souvent extrêmement pénible et inutile, dans des conditions dangereuses, avec très peu de pauses. Les déportés devaient travailler malgré la faim, la fatigue et la maladie, ce qui entraînait un épuisement rapide. La nourriture était insuffisante et de très mauvaise qualité, provoquant une faim permanente et une perte de poids importante. La nuit, ils dormaient dans des baraquements surpeuplés, entassés à plusieurs sur des couchettes en bois, sans couvertures suffisantes, ce qui rendait le repos presque impossible.
+
+La vie dans les camps était aussi marquée par une violence constante. Les gardes pouvaient frapper ou punir les déportés sans raison, et la moindre erreur pouvait avoir de graves conséquences. Les conditions d’hygiène étaient catastrophiques : le manque d’eau et de soins favorisait la propagation rapide des maladies, qui faisaient de nombreuses victimes. À cela s’ajoutait une souffrance morale intense : isolement, peur permanente, perte de repères et incertitude quant à l’avenir. Les déportés vivaient dans une angoisse constante, notamment à cause des sélections régulières, où certains étaient désignés pour être exécutés.
+
+Ainsi, la vie dans les camps ne se résumait pas seulement à la survie physique, mais était une épreuve quotidienne qui visait à briser les individus, tant sur le plan physique que psychologique, en les privant de dignité, de liberté et d’espoir. </p>
+        <div class="image-container">
+            <img src="https://encyclopedia.ushmm.org/images/large/0bbfdaca-ef0e-4bf3-afdc-250a30f35f8c.jpeg" class="petite-image">
+            <figcaption> Source : United States Holocaust Memorial Museum<br>
+                <br>
+            Cette photo de l’entrée d’Auschwitz-Birkenau montre la cruauté extrême du camp dès le premier regard. Les rails qui mènent directement à la porte rappellent que des milliers de déportés ont été transportés là par trains, souvent après des voyages interminables dans des wagons à bestiaux. Le portail central et les bâtiments qui l’encadrent symbolisent la surveillance permanente et l’organisation stricte du camp, conçue pour contrôler, enfermer et déshumaniser les prisonniers. L’ensemble du site, avec ses miradors et sa structure fermée, illustre la peur constante qui régnait : chaque déporté était sous observation, soumis à des conditions de vie terribles — manque de nourriture, travail forcé, hygiène insuffisante et privation de liberté. L’image met aussi en évidence le contraste cruel entre l’apparence ordonnée et l’horreur qui se déroulait à l’intérieur, rappelant que dès leur arrivée, les détenus faisaient face à une violence systématique et à une mort omniprésente.</figcaption>
+        </div>
+    </div>
+
+    <div id="La résistance" class="content style">
+        <h2> La résistance au sein des camps de concentration</h2>
+        <p>Dans les camps, il existe d’abord une résistance pour survivre, aussi appelée résistance morale. Elle consiste à faire preuve de solidarité entre prisonniers : ils partagent la nourriture, les vêtements ou les médicaments avec les plus faibles. Ils essaient aussi de préserver leur dignité malgré des conditions de vie déplorables et inhumaines. En effet, même s’ils souffrent énormément, leur objectif est de survivre pour espérer sortir un jour des camps.
+
+Ensuite, une résistance culturelle et spirituelle se développe à l’intérieur des camps. Des déportés enseignent clandestinement, au risque de leur vie, car cela est interdit par les autorités nazies. Ils racontent des histoires, prient, chantent, écrivent des poèmes ou des journaux secrets, et conservent parfois des objets symboliques. Cette forme de résistance permet de lutter contre la déshumanisation imposée par les nazis.
+
+Enfin, il existe dans certains camps une résistance organisée. Elle permet de transmettre des informations entre déportés, de saboter le travail forcé ou encore d’organiser des révoltes. Par exemple, à Treblinka en 1943, des prisonniers organisent une révolte en secret, avec un vol d’armes et l’incendie du camp. La même année, à Sobibor, des déportés tuent certains gardes afin de permettre une évasion collective. Enfin, en 1944, au camp d’Auschwitz-Birkenau, des prisonniers appelés Sonderkommandos (déportés, forcé de travailler dans les chambres à gaz et dans les crématoires) parviennent, grâce à des explosifs, à détruire partiellement un crématoire et à attaquer des gardes.
+</p>
+<div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Auschwitz_Resistance_282_cropped.JPG?_=20130914041157" class="petite-image">
+            <figcaption> Source : Wikipédia / Photographie du Sonderkommando<br>
+                <br>
+            C'est une photographie prise secrètement à Auschwitz en août 1944 par un prisonnier membre du Sonderkommando (document historique).<Br> Cette photo est parmi les très rares photographies clandestines prises dans un camp par un prisonnier, et témoignent de l’horreur du système d’extermination nazi.<br>
+C'est un symbole puissant de la résistance dans les camps de concentration. Malgré les conditions de vie extrêmes : faim, travail forcé, violence constante et menace de mort, le prisonnier a risqué sa vie pour documenter la réalité des chambres à gaz, un acte strictement interdit par les nazis. En prenant cette image, il a non seulement défié le régime, mais il a aussi préservé la mémoire de l’horreur subie par les déportés. Cette photographie représente une forme de résistance morale et symbolique : même dans un environnement où la survie semblait impossible, certains prisonniers ont choisi de témoigner et de lutter pour la vérité. Aujourd’hui, elle reste une preuve incontournable du courage des déportés et un rappel de l’importance de la mémoire face à l’injustice et à la barbarie.
+        </figcaption>
+        </div>
+    </div>
+
+    <div id="Le tribunal de Nuremberg" class="content style">
+        <h2>Juger : Le tribunal de Nuremberg</h2>
+        <p>Après la Seconde Guerre mondiale, les Alliés mettent en place le Procès de Nuremberg afin de juger les principaux responsables nazis. Ce procès se déroule de 1945 à 1946 dans la ville de Nuremberg, en Allemagne.
+
+Ce tribunal a pour objectif de juger les crimes commis par les nazis, notamment les crimes de guerre, les crimes contre l’humanité et les crimes contre la paix. Les dirigeants nazis sont accusés d’avoir organisé la guerre et les persécutions, dont la déportation et l’extermination de millions de personnes.
+
+Lors de ce procès, plusieurs hauts responsables du régime nazi sont jugés, comme Hermann Göring et 23 autres grands dirigeants nazis. Certains sont condamnés à mort, d’autres à des peines de prison. Ce procès est une première dans l’histoire, car il permet de juger des dirigeants pour leurs crimes à l’échelle internationale.
+
+Mais un élément essentiel du procès repose aussi sur les témoignages des résistants et des survivants des camps de concentration. Dans ces camps, des formes de résistance se sont organisées malgré des conditions extrêmes : entraide entre détenus, transmission d’informations, sabotage ou encore conservation de preuves.
+
+Ces résistants et survivants jouent un rôle fondamental lors du procès. Leurs témoignages permettent de décrire concrètement les conditions de vie dans les camps, les violences subies et l’organisation des crimes nazis. Ils apportent des preuves directes qui renforcent l’accusation contre les responsables jugés. Leur parole donne aussi un visage humain aux victimes, ce qui marque profondément l’opinion publique internationale.
+
+Enfin, le tribunal de Nuremberg joue un rôle essentiel dans le devoir de mémoire. Grâce aux preuves rassemblées, notamment celles apportées par les résistants, il permet de révéler au monde l’ampleur des crimes nazis et de conserver une trace historique. Il marque aussi la volonté de rendre justice aux victimes et d’éviter que de tels crimes ne se reproduisent.
+</p>
+<div class="image-container">
+            <img src="https://encyclopedia.ushmm.org/images/large/bd54c27e-4313-4f3b-9f25-f5af1592d984.jpeg" class="petite-image">
+            <figcaption> Source : United States Holocaust Memorial Museum<br>
+                <br>
+            Cette image montre les blessures d’une déportée ayant subi des expériences médicales nazies. Elle a été présentée comme preuve au procès de Nuremberg, notamment lors du procès des médecins nazis. Elle illustre concrètement les crimes commis dans les camps. Ces photos ont permis aux juges de voir la réalité des violences, car les images étaient souvent plus parlantes que les mots.
+        </figcaption>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            const contents = document.querySelectorAll(".content");
+            const buttons = document.querySelectorAll(".tabs button");
+
+            contents.forEach(c => c.classList.remove("active"));
+            buttons.forEach(b => b.classList.remove("active"));
+
+            document.getElementById(tabId).classList.add("active");
+            event.target.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

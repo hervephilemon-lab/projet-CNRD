@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La déportation</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'American Typewriter',
+            background-color #EAE7E1;
+            color: #3A2F2F;
+        }
+
+        a {
+            display: block;
+            padding: 15px 50px;
+            text-decoration: none;
+            color: #3A2F2F;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            padding: 50px;
+            gap: 40px;
+        }
+
+        .text-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .text-section h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .text-section p {
+            font-family: monospace;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .images-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .small-image {
+            height: 250px;
+        }
+
+        .large-image {
+            height: 450px;
+        }
+
+        /* ✨ Style des sources */
+        .image-container figcaption {
+            font-size: 12px;
+            color: #777;
+            text-align: right;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="index.html">← Retour à la page principale</a>
+
+<div class="container">
+
+    <div class="text-section">
+        <h1>La déportation</h1>
+        <p id="textContent"></p>
+    </div>
+
+    <div class="images-section">
+
+        <!-- Image 1 -->
+        <figure class="image-container">
+            <img id="smallImage" class="small-image" src="" alt="Enfants dans un camp">
+            <figcaption id="smallCaption"></figcaption>
+        </figure>
+
+        <!-- Image 2 -->
+        <figure class="image-container">
+            <img id="largeImage" class="large-image" src="" alt="Enfant pendant la guerre">
+            <figcaption id="largeCaption"></figcaption>
+        </figure>
+
+    </div>
+
+</div>
+
+<script>
+const text = `La déportation est un phénomène central de la Seconde Guerre mondiale, un conflit mondial qui se déroule de 1939 à 1945 et qui oppose notamment l’Allemagne nazie à de nombreux pays européens. Après l’arrivée au pouvoir d’Adolf Hitler en 1933, le régime nazi met en place une dictature fondée sur une idéologie raciste et antisémite, qui considère certains peuples comme inférieurs. Dès avant la guerre, des lois discriminatoires sont instaurées pour exclure les Juifs de la société. Avec le déclenchement de la guerre et l’occupation de nombreux territoires en Europe, notamment la France, cette politique se radicalise fortement.
+
+Dans ce contexte, la déportation devient un outil essentiel du régime nazi. Elle consiste à arrêter des populations entières pour les envoyer de force vers l’Est de l’Europe, dans des camps. Elle a lieu pour plusieurs raisons : éliminer les populations jugées “indésirables”, exploiter une main-d’œuvre forcée pour soutenir l’effort de guerre, et surtout mettre en œuvre une politique d’extermination systématique. À partir de 1941-1942, les nazis organisent ce que l’on appelle la “solution finale”, c’est-à-dire le génocide des Juifs d’Europe.
+
+Concrètement, les personnes visées — principalement les Juifs, mais aussi les Roms, les résistants, les opposants politiques ou encore les personnes handicapées — sont arrêtées lors de rafles, souvent avec l’aide des autorités locales dans les pays occupés. Elles sont ensuite regroupées dans des camps de transit, puis déportées dans des trains surpeuplés, dans des conditions très dures (manque d’eau, de nourriture, d’air). Le voyage peut durer plusieurs jours. À leur arrivée dans des camps comme Auschwitz-Birkenau, les déportés subissent une sélection : certains sont envoyés directement à la mort, d’autres sont contraints au travail forcé dans des conditions inhumaines. La déportation s’inscrit donc dans un contexte de guerre totale et de violence extrême, où un État utilise tous les moyens pour persécuter, exploiter et exterminer des populations entières.`;
+
+const smallImageSrc = 'https://sfi.usc.edu/sites/default/files/styles/large/public/89277106_web.jpg?itok=7foJyg5A';
+const largeImageSrc = 'https://encyclopedia.ushmm.org/images/large/e9e1e918-5894-45e5-862c-9f6667b51a9d.jpeg';
+
+// ✨ Sources
+const smallCaption = "Source : USC Shoah Foundation";
+const largeCaption = "Source : United States Holocaust Memorial Museum";
+
+// Injection
+document.getElementById('textContent').textContent = text;
+document.getElementById('smallImage').src = smallImageSrc;
+document.getElementById('largeImage').src = largeImageSrc;
+
+document.getElementById('smallCaption').textContent = smallCaption;
+document.getElementById('largeCaption').textContent = largeCaption;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Style normal */
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    text-align: center;
+     background-image: url("https://www.ville-hermes.fr/wp-content/uploads/sites/358/2018/04/commemoration-de-la-journee-de-la-deportation.jpg"); /* chemin de ton image */
+    background-size: cover; /* prend toute la page */
+    background-repeat: no-repeat; /* évite la répétition */
+}
+a {
+    text-decoration: none; /* enlève le soulignement */
+    color: #3A2F2F; /* met la même couleur que ton texte */
+}
+/* Barre d'onglets */
+.tabs {
+    display: flex;
+    background-color: #333;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    background-color: #EAE7E1;
+    color:#1A1A1A;
+    cursor: pointer;
+}
+
+.tabs button:hover {
+    background-color: #eae7e185;
+}
+
+.tabs button.active {
+    background-color: #eae7e185;
+}
+
+/* Contenu */
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+body {
+    font-family: Arial;
+}
+.gras {
+  font-weight: bold;
+}
+.petite-image {
+  width: 500px;
+}
